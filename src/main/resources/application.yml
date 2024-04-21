@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: kafka-app
+  cloud:
+    function:
+      definition: uppercase|echo
+    stream:
+      bindings:
+        uppercase|echo-in-0:
+          destination: uppercase-in
+
+
+
